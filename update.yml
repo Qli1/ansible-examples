@@ -2,9 +2,8 @@
 - name: Update packages on Ubuntu hosts
   hosts: all
   gather_facts: false
-  become: yes
+  become: true
   become_method: sudo
-  become_user: root
 
   tasks:
     - name: Update package cache
